@@ -19,14 +19,10 @@ cat << EOF > /usr/local/etc/v2ray/config.json
             "port": $PORT,
             "protocol": "shadowsocks",
             "settings": {
-                
-                    {
                         "password": "$UUID",
                         "method": "chacha20-ietf",
-                        "network": "tcp,udp"
-                        "level": 0
-                    }
-                
+                        "network": "tcp,udp",
+                        "level": 0,
                 "disableInsecureEncryption": true
             },
             "streamSettings": {
